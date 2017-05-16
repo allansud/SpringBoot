@@ -32,4 +32,8 @@ public class UsuarioService {
 	public Usuario findById(long id) {
 		return usuarioRepository.findOne(id);
 	}
+	
+	public void updateOrSave(Usuario usuario) {
+		usuarioRepository.save(usuario);
+	}
 }
