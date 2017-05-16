@@ -28,4 +28,8 @@ public class UsuarioService {
 	public Usuario findByEmail(String email) {
 		return usuarioRepository.findByEmail(email);
 	}
+	
+	public Usuario findById(long id) {
+		return usuarioRepository.findOne(id);
+	}
 }
